@@ -27,7 +27,7 @@ void playerPanel() {
     std::cout << "3. Inventory\n";
 }
 
-void playerPanelChoice(int a, int b, int c) { // proceeding from playerPanel
+void playerAction(int a, int b, int c) { // proceeding from playerPanel, a = playerchoice, b = playerbalance, 
     if(a == 1) {
         auctionPanel(b);
     }
@@ -109,7 +109,7 @@ int main() {
             std::cout << "Invalid Option\n";
             continue;
         }
-        playerAction(playerPanelChoice);
+        playerAction(playerPanelChoice, playerBalance, );
     }
     std::cout << "Well Done, You have achieved your target goal for the" << difficultyChoice << "difficulty. Thank You for Playing\n";
 
